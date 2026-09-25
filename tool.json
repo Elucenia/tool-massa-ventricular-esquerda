@@ -1,0 +1,198 @@
+{
+  "tool": {
+    "id": "massa-ventricular-esquerda",
+    "title": "Massa do VE e geometria ventricular",
+    "short": "Fórmula da ASE (Devereux), índice e ERP",
+    "spec": [
+      "cardiologia",
+      "radiologia-e-diagnostico-por-imagem"
+    ],
+    "desc": "Calcule a massa do ventrículo esquerdo pela fórmula da ASE (Devereux), o índice de massa, a espessura relativa da parede e a geometria ventricular.",
+    "lead": "Calcula a massa do VE pelo método linear (ASE/Devereux), indexa pela superfície corporal e classifica a geometria ventricular.",
+    "fields": [
+      [
+        "siv",
+        "Septo interventricular (diástole)",
+        "num",
+        {
+          "min": 0.4,
+          "max": 3,
+          "step": "0.01",
+          "unit": "cm",
+          "ph": "1,0"
+        }
+      ],
+      [
+        "ddve",
+        "Diâmetro diastólico do VE",
+        "num",
+        {
+          "min": 2,
+          "max": 9,
+          "step": "0.01",
+          "unit": "cm",
+          "ph": "5,0"
+        }
+      ],
+      [
+        "ppve",
+        "Parede posterior (diástole)",
+        "num",
+        {
+          "min": 0.4,
+          "max": 3,
+          "step": "0.01",
+          "unit": "cm",
+          "ph": "1,0"
+        }
+      ],
+      [
+        "peso",
+        "Peso",
+        "num",
+        {
+          "min": 20,
+          "max": 300,
+          "step": "0.1",
+          "unit": "kg",
+          "ph": "75"
+        }
+      ],
+      [
+        "altura",
+        "Altura",
+        "num",
+        {
+          "min": 100,
+          "max": 230,
+          "unit": "cm",
+          "ph": "170"
+        }
+      ],
+      [
+        "sexo",
+        "Sexo",
+        "radio",
+        {
+          "opts": {
+            "F": "Feminino",
+            "M": "Masculino"
+          }
+        }
+      ]
+    ],
+    "formula": "<ul><li><strong>Massa do VE (g)</strong> = 0,8 × 1,04 × [(SIV + DDVE + PP)³ − DDVE³] + 0,6 (medidas em cm)</li><li><strong>Índice de massa</strong> = massa ÷ superfície corporal (Mosteller)</li><li><strong>Espessura relativa da parede (ERP)</strong> = 2 × PP ÷ DDVE</li></ul>",
+    "table": [
+      [
+        "Geometria",
+        "ERP",
+        "Índice de massa"
+      ],
+      [
+        "Normal",
+        "≤ 0,42",
+        "Normal"
+      ],
+      [
+        "Remodelamento concêntrico",
+        "&gt; 0,42",
+        "Normal"
+      ],
+      [
+        "Hipertrofia concêntrica",
+        "&gt; 0,42",
+        "Aumentado"
+      ],
+      [
+        "Hipertrofia excêntrica",
+        "≤ 0,42",
+        "Aumentado"
+      ]
+    ],
+    "table_note": "Índice de massa aumentado (ASE 2015): &gt; 95 g/m² nas mulheres e &gt; 115 g/m² nos homens.",
+    "tips": [
+      "Meça no modo bidimensional (ou M guiado), no plano paraesternal longo, no fim da diástole, perpendicular ao eixo do VE, logo abaixo das cúspides mitrais.",
+      "Pequenos erros de medida são elevados ao cubo: 1 mm a mais no septo muda a massa em ~10 g. Evite incluir a banda moderadora e as trabéculas do VD no septo.",
+      "O método linear pressupõe VE simétrico: em ventrículos remodelados de forma assimétrica (pós-infarto, cardiomiopatia hipertrófica), prefira métodos 2D ou 3D.",
+      "Hipertrofia concêntrica em hipertenso é marcador de lesão de órgão-alvo e de maior risco cardiovascular."
+    ],
+    "sources": [
+      [
+        "Lang RM et al. Recommendations for cardiac chamber quantification by echocardiography in adults (ASE/EACVI). J Am Soc Echocardiogr, 2015.",
+        "https://doi.org/10.1016/j.echo.2014.10.003"
+      ],
+      [
+        "Devereux RB et al. Echocardiographic assessment of left ventricular hypertrophy: comparison to necropsy findings. Am J Cardiol, 1986.",
+        "https://doi.org/10.1016/0002-9149(86)90771-X"
+      ]
+    ],
+    "cases": [
+      [
+        "SIV 1,0 · DDVE 5,0 · PP 1,0 cm; 70 kg, 170 cm (homem): 182 g, ERP 0,40, geometria normal",
+        {
+          "siv": 1,
+          "ddve": 5,
+          "ppve": 1,
+          "peso": 70,
+          "altura": 170,
+          "sexo": "M"
+        },
+        {
+          "raw": {
+            "mass": 182,
+            "rwt": 0.4
+          },
+          "tol": 0.05,
+          "verdict": "Geometria normal"
+        }
+      ],
+      [
+        "SIV 1,4 · DDVE 4,6 · PP 1,3 cm (mulher): hipertrofia concêntrica",
+        {
+          "siv": 1.4,
+          "ddve": 4.6,
+          "ppve": 1.3,
+          "peso": 70,
+          "altura": 170,
+          "sexo": "F"
+        },
+        {
+          "verdict": "Hipertrofia concêntrica",
+          "level": "high"
+        }
+      ]
+    ],
+    "batch": "cardiologia",
+    "kind": "Calculadora",
+    "config": null,
+    "areaId": "cardiotoracica",
+    "clinicalReview": "pending",
+    "sourceReview": "pending",
+    "sourceFile": "app/content/ferramentas/cardiologia.php",
+    "arithmeticTest": {
+      "status": "passed",
+      "testedAt": "2026-09-25",
+      "total": 2,
+      "passed": 2,
+      "failures": []
+    },
+    "independentArithmeticTest": {
+      "status": "not-tested",
+      "testedAt": null,
+      "total": 0,
+      "passed": 0,
+      "cases": []
+    }
+  },
+  "review": {
+    "status": "needs-review",
+    "reason": "Revisão documental e clínica independente pendente.",
+    "clinicalValidation": "not-performed"
+  },
+  "sourceFile": {
+    "path": "app/content/ferramentas/cardiologia.php",
+    "sha256": "ed536451dd02922a7f840f2c9ce575be004cddb227f60426b7a52cf1b0e94ec0",
+    "bytes": 61303
+  },
+  "clinicalValidation": "not-performed"
+}

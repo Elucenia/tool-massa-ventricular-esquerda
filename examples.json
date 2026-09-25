@@ -1,0 +1,54 @@
+[
+  {
+    "label": "SIV 1,0 · DDVE 5,0 · PP 1,0 cm; 70 kg, 170 cm (homem): 182 g, ERP 0,40, geometria normal",
+    "input": {
+      "siv": 1,
+      "ddve": 5,
+      "ppve": 1,
+      "peso": 70,
+      "altura": 170,
+      "sexo": "M"
+    },
+    "expected": {
+      "raw": {
+        "mass": 182,
+        "rwt": 0.4
+      },
+      "tol": 0.05,
+      "verdict": "Geometria normal"
+    },
+    "originalInput": {
+      "siv": 1,
+      "ddve": 5,
+      "ppve": 1,
+      "peso": 70,
+      "altura": 170,
+      "sexo": "M"
+    },
+    "expandedZeroOptions": []
+  },
+  {
+    "label": "SIV 1,4 · DDVE 4,6 · PP 1,3 cm (mulher): hipertrofia concêntrica",
+    "input": {
+      "siv": 1.4,
+      "ddve": 4.6,
+      "ppve": 1.3,
+      "peso": 70,
+      "altura": 170,
+      "sexo": "F"
+    },
+    "expected": {
+      "verdict": "Hipertrofia concêntrica",
+      "level": "high"
+    },
+    "originalInput": {
+      "siv": 1.4,
+      "ddve": 4.6,
+      "ppve": 1.3,
+      "peso": 70,
+      "altura": 170,
+      "sexo": "F"
+    },
+    "expandedZeroOptions": []
+  }
+]
