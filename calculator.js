@@ -1,11 +1,11 @@
-/* tool-massa-ventricular-esquerda · Elucenia · https://github.com/Elucenia/tool-massa-ventricular-esquerda
-   Copyright (c) 2026 Elucenia · Felipe Guedes (fgxdev.com). Licensed under the Apache License 2.0: keep this notice and the NOTICE file, and mark your changes.
+/* tool-massa-ventricular-esquerda · ELUCENIA · https://github.com/Elucenia/tool-massa-ventricular-esquerda
+   Copyright (c) 2026 ELUCENIA · Felipe Guedes (fgxdev.com). Licensed under the Apache License 2.0: keep this notice and the NOTICE file, and mark your changes.
    Standalone integration. Package metadata and rights: README.md. */
 (function(root){'use strict';
 function freeze(value){if(value&&typeof value==='object'){for(const item of Object.values(value))freeze(item);Object.freeze(value);}return value;}
 const TOOL=freeze({"id":"massa-ventricular-esquerda","title":"Massa do VE e geometria ventricular","fields":[["siv","Septo interventricular (diástole)","num",{"min":0.4,"max":3,"step":"0.01","unit":"cm","ph":"1,0"}],["ddve","Diâmetro diastólico do VE","num",{"min":2,"max":9,"step":"0.01","unit":"cm","ph":"5,0"}],["ppve","Parede posterior (diástole)","num",{"min":0.4,"max":3,"step":"0.01","unit":"cm","ph":"1,0"}],["peso","Peso","num",{"min":20,"max":300,"step":"0.1","unit":"kg","ph":"75"}],["altura","Altura","num",{"min":100,"max":230,"unit":"cm","ph":"170"}],["sexo","Sexo","radio",{"opts":{"F":"Feminino","M":"Masculino"}}]],"config":null,"reviewStatus":"needs-review","clinicalValidation":"not-performed"});
 const window={};
-/* Elucenia arithmetic registry. No DOM access, storage, telemetry or network requests. */
+/* ELUCENIA arithmetic registry. No DOM access, storage, telemetry or network requests. */
 (function(root){
   'use strict';
   const CALC={fn:Object.create(null)};
