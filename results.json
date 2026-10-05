@@ -1,0 +1,252 @@
+{
+  "id": "massa-ventricular-esquerda",
+  "at": "2026-10-05T17:29:55.546Z",
+  "adapter": {
+    "file": "apps/website/private/tool-code/massa-ventricular-esquerda/calculator.js",
+    "bytes": 5452,
+    "sha256": "44d70bcc90d37c70197111c448b2c362c3e5554d57cedd08b3bd3bf3cad84425"
+  },
+  "cases": [
+    {
+      "name": "SIV 1,0 · DDVE 5,0 · PP 1,0 cm; 70 kg, 170 cm (homem): 182 g, ERP 0,40, geometria normal",
+      "input": {
+        "siv": 1,
+        "ddve": 5,
+        "ppve": 1,
+        "peso": 70,
+        "altura": 170,
+        "sexo": "M"
+      },
+      "obtained": {
+        "id": "massa-ventricular-esquerda",
+        "main": [
+          "100",
+          "g/m²"
+        ],
+        "label": "Índice de massa do VE",
+        "raw": {
+          "mass": 181.976,
+          "index": 100.09027541712346,
+          "rwt": 0.4,
+          "bsa": 1.818118685772619
+        },
+        "clinicalValidation": "not-performed"
+      },
+      "checks": [
+        {
+          "at": "status",
+          "expected": 200,
+          "obtained": 200,
+          "passed": true
+        },
+        {
+          "at": "result-object",
+          "expected": true,
+          "obtained": true,
+          "passed": true
+        },
+        {
+          "at": "result.raw.mass",
+          "expected": 182,
+          "obtained": 181.976,
+          "tolerance": 0.05,
+          "difference": 0.02400000000000091,
+          "scope": "Recorded rounded source reference",
+          "passed": true
+        },
+        {
+          "at": "result.raw.rwt",
+          "expected": 0.4,
+          "obtained": 0.4,
+          "tolerance": 0.05,
+          "difference": 0,
+          "scope": "Recorded rounded source reference",
+          "passed": true
+        },
+        {
+          "at": "regression.result.raw.mass",
+          "expected": 181.976,
+          "obtained": 181.976,
+          "tolerance": 1.81976e-10,
+          "difference": 0,
+          "scope": "Existing precise source-audit transport regression, not independent formula validation",
+          "passed": true
+        },
+        {
+          "at": "regression.result.raw.index",
+          "expected": 100.09027541712346,
+          "obtained": 100.09027541712346,
+          "tolerance": 1.0009027541712346e-10,
+          "difference": 0,
+          "scope": "Existing precise source-audit transport regression, not independent formula validation",
+          "passed": true
+        },
+        {
+          "at": "regression.result.raw.rwt",
+          "expected": 0.4,
+          "obtained": 0.4,
+          "tolerance": 1e-10,
+          "difference": 0,
+          "scope": "Existing precise source-audit transport regression, not independent formula validation",
+          "passed": true
+        },
+        {
+          "at": "regression.result.raw.bsa",
+          "expected": 1.818118685772619,
+          "obtained": 1.818118685772619,
+          "tolerance": 1e-10,
+          "difference": 0,
+          "scope": "Existing precise source-audit transport regression, not independent formula validation",
+          "passed": true
+        },
+        {
+          "at": "regression.result.main.length",
+          "expected": 2,
+          "obtained": 2,
+          "scope": "Existing source-audit public representation regression",
+          "passed": true
+        },
+        {
+          "at": "regression.result.main[0]",
+          "expected": "100",
+          "obtained": "100",
+          "scope": "Existing source-audit public representation regression",
+          "passed": true
+        },
+        {
+          "at": "regression.result.main[1]",
+          "expected": "g/m²",
+          "obtained": "g/m²",
+          "scope": "Existing source-audit public representation regression",
+          "passed": true
+        }
+      ],
+      "notCompared": [
+        {
+          "key": "verdict",
+          "reason": "Historical interpretative/explanatory expectation outside the bounded API and outside clinical approval"
+        }
+      ],
+      "status": "passed"
+    },
+    {
+      "name": "SIV 1,4 · DDVE 4,6 · PP 1,3 cm (mulher): hipertrofia concêntrica",
+      "input": {
+        "siv": 1.4,
+        "ddve": 4.6,
+        "ppve": 1.3,
+        "peso": 70,
+        "altura": 170,
+        "sexo": "F"
+      },
+      "obtained": {
+        "id": "massa-ventricular-esquerda",
+        "main": [
+          "134",
+          "g/m²"
+        ],
+        "label": "Índice de massa do VE",
+        "raw": {
+          "mass": 243.27859199999995,
+          "index": 133.80787178732362,
+          "rwt": 0.5652173913043479,
+          "bsa": 1.818118685772619
+        },
+        "clinicalValidation": "not-performed"
+      },
+      "checks": [
+        {
+          "at": "status",
+          "expected": 200,
+          "obtained": 200,
+          "passed": true
+        },
+        {
+          "at": "result-object",
+          "expected": true,
+          "obtained": true,
+          "passed": true
+        },
+        {
+          "at": "regression.result.raw.mass",
+          "expected": 243.27859199999995,
+          "obtained": 243.27859199999995,
+          "tolerance": 2.432785919999999e-10,
+          "difference": 0,
+          "scope": "Existing precise source-audit transport regression, not independent formula validation",
+          "passed": true
+        },
+        {
+          "at": "regression.result.raw.index",
+          "expected": 133.80787178732362,
+          "obtained": 133.80787178732362,
+          "tolerance": 1.338078717873236e-10,
+          "difference": 0,
+          "scope": "Existing precise source-audit transport regression, not independent formula validation",
+          "passed": true
+        },
+        {
+          "at": "regression.result.raw.rwt",
+          "expected": 0.5652173913043479,
+          "obtained": 0.5652173913043479,
+          "tolerance": 1e-10,
+          "difference": 0,
+          "scope": "Existing precise source-audit transport regression, not independent formula validation",
+          "passed": true
+        },
+        {
+          "at": "regression.result.raw.bsa",
+          "expected": 1.818118685772619,
+          "obtained": 1.818118685772619,
+          "tolerance": 1e-10,
+          "difference": 0,
+          "scope": "Existing precise source-audit transport regression, not independent formula validation",
+          "passed": true
+        },
+        {
+          "at": "regression.result.main.length",
+          "expected": 2,
+          "obtained": 2,
+          "scope": "Existing source-audit public representation regression",
+          "passed": true
+        },
+        {
+          "at": "regression.result.main[0]",
+          "expected": "134",
+          "obtained": "134",
+          "scope": "Existing source-audit public representation regression",
+          "passed": true
+        },
+        {
+          "at": "regression.result.main[1]",
+          "expected": "g/m²",
+          "obtained": "g/m²",
+          "scope": "Existing source-audit public representation regression",
+          "passed": true
+        }
+      ],
+      "notCompared": [
+        {
+          "key": "verdict",
+          "reason": "Historical interpretative/explanatory expectation outside the bounded API and outside clinical approval"
+        },
+        {
+          "key": "level",
+          "reason": "Historical interpretative/explanatory expectation outside the bounded API and outside clinical approval"
+        }
+      ],
+      "status": "passed"
+    }
+  ],
+  "refusals": {
+    "passed": 57,
+    "failed": 0,
+    "failures": []
+  },
+  "sourceNodeBrowserVmParity": true,
+  "actualBrowserDomVerified": false,
+  "newIndependentOracle": false,
+  "currentActualR6HttpEvidence": "pending",
+  "clinicalApproval": false,
+  "professionalLanguageApproval": false
+}

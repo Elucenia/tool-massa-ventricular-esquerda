@@ -1,0 +1,880 @@
+[
+  {
+    "name": "Reject null input",
+    "input": null,
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": null
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject array input",
+    "input": [],
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": null
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject string input",
+    "input": "invalid",
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": null
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject numeric input",
+    "input": 1,
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": null
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject missing required field siv",
+    "input": {
+      "ddve": 5,
+      "ppve": 1,
+      "peso": 70,
+      "altura": 170,
+      "sexo": "M"
+    },
+    "expected": {
+      "code": "REQUIRED_FIELD",
+      "field": "siv"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject empty required field siv",
+    "input": {
+      "siv": "",
+      "ddve": 5,
+      "ppve": 1,
+      "peso": 70,
+      "altura": 170,
+      "sexo": "M"
+    },
+    "expected": {
+      "code": "REQUIRED_FIELD",
+      "field": "siv"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid numeric \"NaN\" siv",
+    "input": {
+      "siv": "NaN",
+      "ddve": 5,
+      "ppve": 1,
+      "peso": 70,
+      "altura": 170,
+      "sexo": "M"
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "siv"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid numeric \"Infinity\" siv",
+    "input": {
+      "siv": "Infinity",
+      "ddve": 5,
+      "ppve": 1,
+      "peso": 70,
+      "altura": 170,
+      "sexo": "M"
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "siv"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid numeric \"1e309\" siv",
+    "input": {
+      "siv": "1e309",
+      "ddve": 5,
+      "ppve": 1,
+      "peso": 70,
+      "altura": 170,
+      "sexo": "M"
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "siv"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid numeric \"invalid\" siv",
+    "input": {
+      "siv": "invalid",
+      "ddve": 5,
+      "ppve": 1,
+      "peso": 70,
+      "altura": 170,
+      "sexo": "M"
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "siv"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid numeric {} siv",
+    "input": {
+      "siv": {},
+      "ddve": 5,
+      "ppve": 1,
+      "peso": 70,
+      "altura": 170,
+      "sexo": "M"
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "siv"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid numeric true siv",
+    "input": {
+      "siv": true,
+      "ddve": 5,
+      "ppve": 1,
+      "peso": 70,
+      "altura": 170,
+      "sexo": "M"
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "siv"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject below documented minimum siv",
+    "input": {
+      "siv": -0.6,
+      "ddve": 5,
+      "ppve": 1,
+      "peso": 70,
+      "altura": 170,
+      "sexo": "M"
+    },
+    "expected": {
+      "code": "OUT_OF_RANGE",
+      "field": "siv"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject above documented maximum siv",
+    "input": {
+      "siv": 4,
+      "ddve": 5,
+      "ppve": 1,
+      "peso": 70,
+      "altura": 170,
+      "sexo": "M"
+    },
+    "expected": {
+      "code": "OUT_OF_RANGE",
+      "field": "siv"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject missing required field ddve",
+    "input": {
+      "siv": 1,
+      "ppve": 1,
+      "peso": 70,
+      "altura": 170,
+      "sexo": "M"
+    },
+    "expected": {
+      "code": "REQUIRED_FIELD",
+      "field": "ddve"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject empty required field ddve",
+    "input": {
+      "siv": 1,
+      "ddve": "",
+      "ppve": 1,
+      "peso": 70,
+      "altura": 170,
+      "sexo": "M"
+    },
+    "expected": {
+      "code": "REQUIRED_FIELD",
+      "field": "ddve"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid numeric \"NaN\" ddve",
+    "input": {
+      "siv": 1,
+      "ddve": "NaN",
+      "ppve": 1,
+      "peso": 70,
+      "altura": 170,
+      "sexo": "M"
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "ddve"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid numeric \"Infinity\" ddve",
+    "input": {
+      "siv": 1,
+      "ddve": "Infinity",
+      "ppve": 1,
+      "peso": 70,
+      "altura": 170,
+      "sexo": "M"
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "ddve"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid numeric \"1e309\" ddve",
+    "input": {
+      "siv": 1,
+      "ddve": "1e309",
+      "ppve": 1,
+      "peso": 70,
+      "altura": 170,
+      "sexo": "M"
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "ddve"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid numeric \"invalid\" ddve",
+    "input": {
+      "siv": 1,
+      "ddve": "invalid",
+      "ppve": 1,
+      "peso": 70,
+      "altura": 170,
+      "sexo": "M"
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "ddve"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid numeric {} ddve",
+    "input": {
+      "siv": 1,
+      "ddve": {},
+      "ppve": 1,
+      "peso": 70,
+      "altura": 170,
+      "sexo": "M"
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "ddve"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid numeric true ddve",
+    "input": {
+      "siv": 1,
+      "ddve": true,
+      "ppve": 1,
+      "peso": 70,
+      "altura": 170,
+      "sexo": "M"
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "ddve"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject below documented minimum ddve",
+    "input": {
+      "siv": 1,
+      "ddve": 1,
+      "ppve": 1,
+      "peso": 70,
+      "altura": 170,
+      "sexo": "M"
+    },
+    "expected": {
+      "code": "OUT_OF_RANGE",
+      "field": "ddve"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject above documented maximum ddve",
+    "input": {
+      "siv": 1,
+      "ddve": 10,
+      "ppve": 1,
+      "peso": 70,
+      "altura": 170,
+      "sexo": "M"
+    },
+    "expected": {
+      "code": "OUT_OF_RANGE",
+      "field": "ddve"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject missing required field ppve",
+    "input": {
+      "siv": 1,
+      "ddve": 5,
+      "peso": 70,
+      "altura": 170,
+      "sexo": "M"
+    },
+    "expected": {
+      "code": "REQUIRED_FIELD",
+      "field": "ppve"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject empty required field ppve",
+    "input": {
+      "siv": 1,
+      "ddve": 5,
+      "ppve": "",
+      "peso": 70,
+      "altura": 170,
+      "sexo": "M"
+    },
+    "expected": {
+      "code": "REQUIRED_FIELD",
+      "field": "ppve"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid numeric \"NaN\" ppve",
+    "input": {
+      "siv": 1,
+      "ddve": 5,
+      "ppve": "NaN",
+      "peso": 70,
+      "altura": 170,
+      "sexo": "M"
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "ppve"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid numeric \"Infinity\" ppve",
+    "input": {
+      "siv": 1,
+      "ddve": 5,
+      "ppve": "Infinity",
+      "peso": 70,
+      "altura": 170,
+      "sexo": "M"
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "ppve"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid numeric \"1e309\" ppve",
+    "input": {
+      "siv": 1,
+      "ddve": 5,
+      "ppve": "1e309",
+      "peso": 70,
+      "altura": 170,
+      "sexo": "M"
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "ppve"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid numeric \"invalid\" ppve",
+    "input": {
+      "siv": 1,
+      "ddve": 5,
+      "ppve": "invalid",
+      "peso": 70,
+      "altura": 170,
+      "sexo": "M"
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "ppve"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid numeric {} ppve",
+    "input": {
+      "siv": 1,
+      "ddve": 5,
+      "ppve": {},
+      "peso": 70,
+      "altura": 170,
+      "sexo": "M"
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "ppve"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid numeric true ppve",
+    "input": {
+      "siv": 1,
+      "ddve": 5,
+      "ppve": true,
+      "peso": 70,
+      "altura": 170,
+      "sexo": "M"
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "ppve"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject below documented minimum ppve",
+    "input": {
+      "siv": 1,
+      "ddve": 5,
+      "ppve": -0.6,
+      "peso": 70,
+      "altura": 170,
+      "sexo": "M"
+    },
+    "expected": {
+      "code": "OUT_OF_RANGE",
+      "field": "ppve"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject above documented maximum ppve",
+    "input": {
+      "siv": 1,
+      "ddve": 5,
+      "ppve": 4,
+      "peso": 70,
+      "altura": 170,
+      "sexo": "M"
+    },
+    "expected": {
+      "code": "OUT_OF_RANGE",
+      "field": "ppve"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject missing required field peso",
+    "input": {
+      "siv": 1,
+      "ddve": 5,
+      "ppve": 1,
+      "altura": 170,
+      "sexo": "M"
+    },
+    "expected": {
+      "code": "REQUIRED_FIELD",
+      "field": "peso"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject empty required field peso",
+    "input": {
+      "siv": 1,
+      "ddve": 5,
+      "ppve": 1,
+      "peso": "",
+      "altura": 170,
+      "sexo": "M"
+    },
+    "expected": {
+      "code": "REQUIRED_FIELD",
+      "field": "peso"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid numeric \"NaN\" peso",
+    "input": {
+      "siv": 1,
+      "ddve": 5,
+      "ppve": 1,
+      "peso": "NaN",
+      "altura": 170,
+      "sexo": "M"
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "peso"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid numeric \"Infinity\" peso",
+    "input": {
+      "siv": 1,
+      "ddve": 5,
+      "ppve": 1,
+      "peso": "Infinity",
+      "altura": 170,
+      "sexo": "M"
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "peso"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid numeric \"1e309\" peso",
+    "input": {
+      "siv": 1,
+      "ddve": 5,
+      "ppve": 1,
+      "peso": "1e309",
+      "altura": 170,
+      "sexo": "M"
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "peso"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid numeric \"invalid\" peso",
+    "input": {
+      "siv": 1,
+      "ddve": 5,
+      "ppve": 1,
+      "peso": "invalid",
+      "altura": 170,
+      "sexo": "M"
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "peso"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid numeric {} peso",
+    "input": {
+      "siv": 1,
+      "ddve": 5,
+      "ppve": 1,
+      "peso": {},
+      "altura": 170,
+      "sexo": "M"
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "peso"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid numeric true peso",
+    "input": {
+      "siv": 1,
+      "ddve": 5,
+      "ppve": 1,
+      "peso": true,
+      "altura": 170,
+      "sexo": "M"
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "peso"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject below documented minimum peso",
+    "input": {
+      "siv": 1,
+      "ddve": 5,
+      "ppve": 1,
+      "peso": 18,
+      "altura": 170,
+      "sexo": "M"
+    },
+    "expected": {
+      "code": "OUT_OF_RANGE",
+      "field": "peso"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject above documented maximum peso",
+    "input": {
+      "siv": 1,
+      "ddve": 5,
+      "ppve": 1,
+      "peso": 330,
+      "altura": 170,
+      "sexo": "M"
+    },
+    "expected": {
+      "code": "OUT_OF_RANGE",
+      "field": "peso"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject missing required field altura",
+    "input": {
+      "siv": 1,
+      "ddve": 5,
+      "ppve": 1,
+      "peso": 70,
+      "sexo": "M"
+    },
+    "expected": {
+      "code": "REQUIRED_FIELD",
+      "field": "altura"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject empty required field altura",
+    "input": {
+      "siv": 1,
+      "ddve": 5,
+      "ppve": 1,
+      "peso": 70,
+      "altura": "",
+      "sexo": "M"
+    },
+    "expected": {
+      "code": "REQUIRED_FIELD",
+      "field": "altura"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid numeric \"NaN\" altura",
+    "input": {
+      "siv": 1,
+      "ddve": 5,
+      "ppve": 1,
+      "peso": 70,
+      "altura": "NaN",
+      "sexo": "M"
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "altura"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid numeric \"Infinity\" altura",
+    "input": {
+      "siv": 1,
+      "ddve": 5,
+      "ppve": 1,
+      "peso": 70,
+      "altura": "Infinity",
+      "sexo": "M"
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "altura"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid numeric \"1e309\" altura",
+    "input": {
+      "siv": 1,
+      "ddve": 5,
+      "ppve": 1,
+      "peso": 70,
+      "altura": "1e309",
+      "sexo": "M"
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "altura"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid numeric \"invalid\" altura",
+    "input": {
+      "siv": 1,
+      "ddve": 5,
+      "ppve": 1,
+      "peso": 70,
+      "altura": "invalid",
+      "sexo": "M"
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "altura"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid numeric {} altura",
+    "input": {
+      "siv": 1,
+      "ddve": 5,
+      "ppve": 1,
+      "peso": 70,
+      "altura": {},
+      "sexo": "M"
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "altura"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid numeric true altura",
+    "input": {
+      "siv": 1,
+      "ddve": 5,
+      "ppve": 1,
+      "peso": 70,
+      "altura": true,
+      "sexo": "M"
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "altura"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject below documented minimum altura",
+    "input": {
+      "siv": 1,
+      "ddve": 5,
+      "ppve": 1,
+      "peso": 70,
+      "altura": 90,
+      "sexo": "M"
+    },
+    "expected": {
+      "code": "OUT_OF_RANGE",
+      "field": "altura"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject above documented maximum altura",
+    "input": {
+      "siv": 1,
+      "ddve": 5,
+      "ppve": 1,
+      "peso": 70,
+      "altura": 253,
+      "sexo": "M"
+    },
+    "expected": {
+      "code": "OUT_OF_RANGE",
+      "field": "altura"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject missing required field sexo",
+    "input": {
+      "siv": 1,
+      "ddve": 5,
+      "ppve": 1,
+      "peso": 70,
+      "altura": 170
+    },
+    "expected": {
+      "code": "REQUIRED_FIELD",
+      "field": "sexo"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject empty required field sexo",
+    "input": {
+      "siv": 1,
+      "ddve": 5,
+      "ppve": 1,
+      "peso": 70,
+      "altura": 170,
+      "sexo": ""
+    },
+    "expected": {
+      "code": "REQUIRED_FIELD",
+      "field": "sexo"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject undocumented option sexo",
+    "input": {
+      "siv": 1,
+      "ddve": 5,
+      "ppve": 1,
+      "peso": 70,
+      "altura": 170,
+      "sexo": "__ELUCENIA_INVALID_OPTION__"
+    },
+    "expected": {
+      "code": "INVALID_OPTION",
+      "field": "sexo"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  }
+]

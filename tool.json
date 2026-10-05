@@ -3,12 +3,13 @@
     "id": "massa-ventricular-esquerda",
     "title": "Massa do VE e geometria ventricular",
     "short": "Fórmula da ASE (Devereux), índice e ERP",
+    "desc": "Calcule a massa do ventrículo esquerdo pela fórmula da ASE (Devereux), o índice de massa, a espessura relativa da parede e a geometria ventricular.",
+    "lead": "Calcula a massa do VE pelo método linear (ASE/Devereux), indexa pela superfície corporal e classifica a geometria ventricular.",
+    "kind": "Calculadora",
     "spec": [
       "cardiologia",
       "radiologia-e-diagnostico-por-imagem"
     ],
-    "desc": "Calcule a massa do ventrículo esquerdo pela fórmula da ASE (Devereux), o índice de massa, a espessura relativa da parede e a geometria ventricular.",
-    "lead": "Calcula a massa do VE pelo método linear (ASE/Devereux), indexa pela superfície corporal e classifica a geometria ventricular.",
     "fields": [
       [
         "siv",
@@ -82,40 +83,6 @@
       ]
     ],
     "formula": "<ul><li><strong>Massa do VE (g)</strong> = 0,8 × 1,04 × [(SIV + DDVE + PP)³ − DDVE³] + 0,6 (medidas em cm)</li><li><strong>Índice de massa</strong> = massa ÷ superfície corporal (Mosteller)</li><li><strong>Espessura relativa da parede (ERP)</strong> = 2 × PP ÷ DDVE</li></ul>",
-    "table": [
-      [
-        "Geometria",
-        "ERP",
-        "Índice de massa"
-      ],
-      [
-        "Normal",
-        "≤ 0,42",
-        "Normal"
-      ],
-      [
-        "Remodelamento concêntrico",
-        "&gt; 0,42",
-        "Normal"
-      ],
-      [
-        "Hipertrofia concêntrica",
-        "&gt; 0,42",
-        "Aumentado"
-      ],
-      [
-        "Hipertrofia excêntrica",
-        "≤ 0,42",
-        "Aumentado"
-      ]
-    ],
-    "table_note": "Índice de massa aumentado (ASE 2015): &gt; 95 g/m² nas mulheres e &gt; 115 g/m² nos homens.",
-    "tips": [
-      "Meça no modo bidimensional (ou M guiado), no plano paraesternal longo, no fim da diástole, perpendicular ao eixo do VE, logo abaixo das cúspides mitrais.",
-      "Pequenos erros de medida são elevados ao cubo: 1 mm a mais no septo muda a massa em ~10 g. Evite incluir a banda moderadora e as trabéculas do VD no septo.",
-      "O método linear pressupõe VE simétrico: em ventrículos remodelados de forma assimétrica (pós-infarto, cardiomiopatia hipertrófica), prefira métodos 2D ou 3D.",
-      "Hipertrofia concêntrica em hipertenso é marcador de lesão de órgão-alvo e de maior risco cardiovascular."
-    ],
     "sources": [
       [
         "Lang RM et al. Recommendations for cardiac chamber quantification by echocardiography in adults (ASE/EACVI). J Am Soc Echocardiogr, 2015.",
@@ -162,9 +129,6 @@
         }
       ]
     ],
-    "kind": "Calculadora",
-    "config": null,
-    "clinicalReview": "pending",
     "arithmeticTest": {
       "status": "passed",
       "testedAt": "2026-09-25",
@@ -173,17 +137,193 @@
       "failures": []
     },
     "independentArithmeticTest": {
-      "status": "not-tested",
-      "testedAt": null,
-      "total": 0,
-      "passed": 0,
-      "cases": []
+      "status": "passed",
+      "testedAt": "2026-10-04T01:05:00.913Z",
+      "total": 30,
+      "passed": 30,
+      "evidencePath": "reports/review-20261003/additional-native-formula-source-oracles-final19.json",
+      "evidenceSha256": "ec8e8eb58ca9b6360c10490e7f4943d559ab06f68c81fba8ffb757f9477d5fb6",
+      "scope": "Linear LV mass in grams and relative wall thickness only. Measurements are in cm at diastole and depend on suitable ventricular geometry. Imaging acquisition, body surface area indexing and geometric/clinical classifications are outside this test.",
+      "source": {
+        "url": "https://www.asecho.org/wp-content/uploads/2016/02/2015_ChamberQuantificationREV.pdf",
+        "edition": "ASE/EACVI 2015 chamber quantification, DOI 10.1016/j.echo.2014.10.003",
+        "locator": "PDF page 13, Table 5; page 15, relative wall thickness definition",
+        "access": "Official 53-page guideline PDF opened; the formula table and relevant measurement limitations read.",
+        "scope": "Linear LV mass in grams and relative wall thickness only. Measurements are in cm at diastole and depend on suitable ventricular geometry. Imaging acquisition, body surface area indexing and geometric/clinical classifications are outside this test."
+      },
+      "executionBuild": {
+        "id": "IguaqI9wAzb-9t1Sb-4Ph",
+        "directory": ".next-private-final19"
+      },
+      "clinicalApproval": "not-performed",
+      "professionalLanguageApproval": "not-performed",
+      "fullSourceConformanceApproval": "not-performed",
+      "publicCandidateBankOmitted": true
+    },
+    "methodVersion": "Devereux 1986 equação cúbica corrigida 0,8×1,04+0,6; ASEEACVI 2015; indexação SCMosteller",
+    "implementationVersion": "massa-ventricular-esquerda@native-2026-10-03+44d70bcc90d3",
+    "currentMethodSource": "https://pubmed.ncbi.nlm.nih.gov/25559473/",
+    "versionEvidence": {
+      "status": "variant-and-source-edition-recorded",
+      "checkedAt": "2026-10-03",
+      "implementedVariant": "Massa do VE (g) = 0,8 × 1,04 × [(SIV + DDVE + PP)³ − DDVE³] + 0,6 (medidas em cm) Índice de massa = massa ÷ superfície corporal (Mosteller) Espessura relativa da parede (ERP) = 2 × PP ÷ DDVE",
+      "inputContract": {
+        "fields": [
+          {
+            "key": "siv",
+            "label": "Septo interventricular (diástole)",
+            "type": "num",
+            "min": 0.4,
+            "max": 3,
+            "unit": "cm",
+            "optional": false,
+            "options": null
+          },
+          {
+            "key": "ddve",
+            "label": "Diâmetro diastólico do VE",
+            "type": "num",
+            "min": 2,
+            "max": 9,
+            "unit": "cm",
+            "optional": false,
+            "options": null
+          },
+          {
+            "key": "ppve",
+            "label": "Parede posterior (diástole)",
+            "type": "num",
+            "min": 0.4,
+            "max": 3,
+            "unit": "cm",
+            "optional": false,
+            "options": null
+          },
+          {
+            "key": "peso",
+            "label": "Peso",
+            "type": "num",
+            "min": 20,
+            "max": 300,
+            "unit": "kg",
+            "optional": false,
+            "options": null
+          },
+          {
+            "key": "altura",
+            "label": "Altura",
+            "type": "num",
+            "min": 100,
+            "max": 230,
+            "unit": "cm",
+            "optional": false,
+            "options": null
+          },
+          {
+            "key": "sexo",
+            "label": "Sexo",
+            "type": "radio",
+            "optional": false,
+            "options": {
+              "F": "Feminino",
+              "M": "Masculino"
+            }
+          }
+        ],
+        "hash": "f32b2858a77072ba649370ab60afa8755bba3c467a3ca487c2b48d95922eb47e"
+      },
+      "sourceEditions": [
+        {
+          "citation": "Lang RM et al. Recommendations for cardiac chamber quantification by echocardiography in adults (ASE/EACVI). J Am Soc Echocardiogr, 2015.",
+          "url": "https://doi.org/10.1016/j.echo.2014.10.003",
+          "class": "primary-publication-abstract-or-metadata-read",
+          "publicationEditionConfirmed": true,
+          "fullTextRetrieved": false,
+          "formulaConformance": "not-assessed",
+          "publication": {
+            "title": "Recommendations for cardiac chamber quantification by echocardiography in adults: an update from the American Society of Echocardiography and the European Association of Cardiovascular Imaging.",
+            "year": "2015",
+            "firstPublicationDate": "2015-01-01",
+            "doi": "10.1016/j.echo.2014.10.003",
+            "pmid": "25559473",
+            "journal": "Journal of the American Society of Echocardiography : official publication of the American Society of Echocardiography",
+            "authors": "Lang RM, Badano LP, Mor-Avi V, Afilalo J, Armstrong A, Ernande L, Flachskampf FA, Foster E, Goldstein SA, Kuznetsova T, Kuznetsova T, Lancellotti P, Muraru D, Picard MH, Rietzschel ER, Rudski L, Spencer KT, Tsang W, Voigt JU."
+          },
+          "primaryPublicationUrl": "https://pubmed.ncbi.nlm.nih.gov/25559473/",
+          "abstractAvailable": true,
+          "fullTextSha256": null,
+          "abstractSha256": "887dd5122e2db8d1a30f98a5e51f719631d1e8045655442e84b77aac65c02c54",
+          "matchedBy": "exact-DOI-or-PMID"
+        },
+        {
+          "citation": "Devereux RB et al. Echocardiographic assessment of left ventricular hypertrophy: comparison to necropsy findings. Am J Cardiol, 1986.",
+          "url": "https://doi.org/10.1016/0002-9149(86)90771-X",
+          "class": "primary-publication-abstract-or-metadata-read",
+          "publicationEditionConfirmed": true,
+          "fullTextRetrieved": false,
+          "formulaConformance": "not-assessed",
+          "publication": {
+            "title": "Echocardiographic assessment of left ventricular hypertrophy: comparison to necropsy findings.",
+            "year": "1986",
+            "firstPublicationDate": "1986-02-01",
+            "doi": "10.1016/0002-9149(86)90771-x",
+            "pmid": "2936235",
+            "journal": "The American journal of cardiology",
+            "authors": "Devereux RB, Alonso DR, Lutas EM, Gottlieb GJ, Campo E, Sachs I, Reichek N."
+          },
+          "primaryPublicationUrl": "https://pubmed.ncbi.nlm.nih.gov/2936235/",
+          "abstractAvailable": true,
+          "fullTextSha256": null,
+          "abstractSha256": "35011deb41cac1f09e0cdefe3b95ec3ede51b5d7ddb3d54369ecab4682ca2097",
+          "matchedBy": "exact-DOI-or-PMID"
+        }
+      ],
+      "publicationEditionConfirmed": true,
+      "fullFormulaConformanceReviewed": false,
+      "formulaConformance": "Not established by bibliographic identity or automatic full-text retrieval; retain independent arithmetic and clinical review as separate evidence.",
+      "independentArithmetic": {
+        "status": "passed",
+        "testedAt": "2026-10-04T01:05:00.913Z",
+        "total": 30,
+        "passed": 30,
+        "evidencePath": "reports/review-20261003/additional-native-formula-source-oracles-final19.json",
+        "evidenceSha256": "ec8e8eb58ca9b6360c10490e7f4943d559ab06f68c81fba8ffb757f9477d5fb6",
+        "scope": "Linear LV mass in grams and relative wall thickness only. Measurements are in cm at diastole and depend on suitable ventricular geometry. Imaging acquisition, body surface area indexing and geometric/clinical classifications are outside this test."
+      },
+      "clinicalApproval": "not-performed",
+      "translationApproval": "not-performed",
+      "releaseApproval": "not-performed",
+      "implementationHash": "44d70bcc90d37c70197111c448b2c362c3e5554d57cedd08b3bd3bf3cad84425"
+    },
+    "limits": "O método linear ASE/EACVI 2015 requer dimensões em centímetros obtidas ao final da diástole e perpendiculares ao eixo longo do ventrículo. Depende de geometria adequada; hipertrofia assimétrica, dilatação e variação regional da espessura podem torná-lo inexato. Como as medidas são elevadas ao cubo, pequenos erros de aquisição alteram a massa. Referências de métodos linear, 2D e indexações corporais diferentes não devem ser intercambiadas automaticamente.",
+    "sourceLimitEvidence": {
+      "checkedAt": "2026-10-04T02:52:03.076Z",
+      "scope": "Targeted source reading and authorial documentation, not full method or clinical approval.",
+      "sourceReviewFile": "remaining-native-population-limits-review.json",
+      "sourceReviewSha256": "ba61a9b120a338c518c34ba9f324558b12580e7f5371ea81304b030b45ea44a5",
+      "readingOutcome": "review-outcome-recorded",
+      "unresolved": [
+        "Não foi conferida aquisição real de imagem ou todo protocolo de indexação por tamanho corporal; referências do método linear e 2 D não são intercambiáveis."
+      ],
+      "fullMethodConformanceReviewed": false,
+      "clinicalApproval": "not-performed",
+      "professionalLanguageApproval": "not-performed"
     }
   },
-  "review": {
-    "status": "needs-review",
-    "reason": "Revisão documental e clínica independente pendente.",
-    "clinicalValidation": "not-performed"
+  "currentSource": {
+    "file": "apps/website/private/tool-code/massa-ventricular-esquerda/calculator.js",
+    "bytes": 5452,
+    "sha256": "44d70bcc90d37c70197111c448b2c362c3e5554d57cedd08b3bd3bf3cad84425"
   },
-  "clinicalValidation": "not-performed"
+  "sourceToolSha256": "1bbd8d029b79f6f05d9195d13c459887866f65e752bc0e2149ea591b80b992e6",
+  "omittedFullReferenceBanks": [
+    {
+      "rows": 30,
+      "sha256": "2d1d514d08b24beefa0c1da4cadc7086abdaccf2f176b21febce18f17e547c85",
+      "reason": "Large independent reference bank not bundled; exact evidence scope and file references retained"
+    }
+  ],
+  "clinicalApproval": "not-performed",
+  "professionalLanguageApproval": "not-performed",
+  "sourceRightsApproval": "not-performed"
 }
