@@ -94,3 +94,29 @@ Formula or classification result. Interpretation, care and applicability depend 
 Apache-2.0 applies only to ELUCENIA code. Rights to instruments, publications, translations and data remain with their respective holders. Preserve LICENSE and NOTICE.
 
 ELUCENIA · Felipe Guedes · Copyright © 2026
+
+## Documented results
+
+The information below preserves the method outputs for synthetic examples. It does not constitute independent clinical validation.
+
+### 1
+
+Normal geometry
+
+| Result details | |
+| --- | --- |
+| Left ventricular mass | 182 g |
+| Body surface area | 1.82 m² |
+| Relative wall thickness | 0.40 |
+
+
+### 2
+
+Concentric hypertrophy
+
+| Result details | |
+| --- | --- |
+| Left ventricular mass | 243 g |
+| Body surface area | 1.82 m² |
+| Relative wall thickness | 0.57 |
+

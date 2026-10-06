@@ -1,0 +1,1229 @@
+{
+  "id": "massa-ventricular-esquerda",
+  "implementationVersion": "massa-ventricular-esquerda@native-2026-10-05+d7e80f227297",
+  "scope": "Rendered current output against the same source method; not an independent numerical/clinical oracle",
+  "locales": {
+    "pt-BR": [
+      {
+        "name": "SIV 1,0 · DDVE 5,0 · PP 1,0 cm; 70 kg, 170 cm (homem): 182 g, ERP 0,40, geometria normal",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Massa do VE",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              },
+              "value": {
+                "text": "182 g",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "Superfície corporal",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              },
+              "value": {
+                "text": "1,82 m²",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              }
+            },
+            {
+              "key": "documented-2",
+              "label": {
+                "text": "Espessura relativa da parede",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              },
+              "value": {
+                "text": "0,40",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Geometria normal",
+            "locale": "pt-BR",
+            "template": "documented-source"
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "SIV 1,4 · DDVE 4,6 · PP 1,3 cm (mulher): hipertrofia concêntrica",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Massa do VE",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              },
+              "value": {
+                "text": "243 g",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "Superfície corporal",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              },
+              "value": {
+                "text": "1,82 m²",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              }
+            },
+            {
+              "key": "documented-2",
+              "label": {
+                "text": "Espessura relativa da parede",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              },
+              "value": {
+                "text": "0,57",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Hipertrofia concêntrica",
+            "locale": "pt-BR",
+            "template": "documented-source"
+          },
+          "level": "high"
+        }
+      }
+    ],
+    "en": [
+      {
+        "name": "SIV 1,0 · DDVE 5,0 · PP 1,0 cm; 70 kg, 170 cm (homem): 182 g, ERP 0,40, geometria normal",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Left ventricular mass",
+                "locale": "en",
+                "template": "documented-authored-2ea7e3063df472ab86fa"
+              },
+              "value": {
+                "text": "182 g",
+                "locale": "en",
+                "template": "documented-authored-96374f8bcf1421016c5d",
+                "sourceNumbers": [
+                  182
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "Body surface area",
+                "locale": "en",
+                "template": "documented-authored-560ad10e83bffd41e076"
+              },
+              "value": {
+                "text": "1.82 m²",
+                "locale": "en",
+                "template": "documented-authored-911a9ee0a1e2d41e442e",
+                "sourceNumbers": [
+                  1.82
+                ]
+              }
+            },
+            {
+              "key": "documented-2",
+              "label": {
+                "text": "Relative wall thickness",
+                "locale": "en",
+                "template": "documented-authored-3e5398ad79385c5ec325"
+              },
+              "value": {
+                "text": "0.40",
+                "locale": "en",
+                "template": "documented-authored-612771c99b0b3a6c1c37",
+                "sourceNumbers": [
+                  0.4
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Normal geometry",
+            "locale": "en",
+            "template": "documented-authored-d50dc8ded4d9dbde6715"
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "SIV 1,4 · DDVE 4,6 · PP 1,3 cm (mulher): hipertrofia concêntrica",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Left ventricular mass",
+                "locale": "en",
+                "template": "documented-authored-2ea7e3063df472ab86fa"
+              },
+              "value": {
+                "text": "243 g",
+                "locale": "en",
+                "template": "documented-authored-96374f8bcf1421016c5d",
+                "sourceNumbers": [
+                  243
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "Body surface area",
+                "locale": "en",
+                "template": "documented-authored-560ad10e83bffd41e076"
+              },
+              "value": {
+                "text": "1.82 m²",
+                "locale": "en",
+                "template": "documented-authored-911a9ee0a1e2d41e442e",
+                "sourceNumbers": [
+                  1.82
+                ]
+              }
+            },
+            {
+              "key": "documented-2",
+              "label": {
+                "text": "Relative wall thickness",
+                "locale": "en",
+                "template": "documented-authored-3e5398ad79385c5ec325"
+              },
+              "value": {
+                "text": "0.57",
+                "locale": "en",
+                "template": "documented-authored-612771c99b0b3a6c1c37",
+                "sourceNumbers": [
+                  0.57
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Concentric hypertrophy",
+            "locale": "en",
+            "template": "documented-authored-43a75bb58ef3d3822ea5"
+          },
+          "level": "high"
+        }
+      }
+    ],
+    "es": [
+      {
+        "name": "SIV 1,0 · DDVE 5,0 · PP 1,0 cm; 70 kg, 170 cm (homem): 182 g, ERP 0,40, geometria normal",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Masa del VI",
+                "locale": "es",
+                "template": "documented-authored-2ea7e3063df472ab86fa"
+              },
+              "value": {
+                "text": "182 g",
+                "locale": "es",
+                "template": "documented-authored-96374f8bcf1421016c5d",
+                "sourceNumbers": [
+                  182
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "Superficie corporal",
+                "locale": "es",
+                "template": "documented-authored-560ad10e83bffd41e076"
+              },
+              "value": {
+                "text": "1,82 m²",
+                "locale": "es",
+                "template": "documented-authored-911a9ee0a1e2d41e442e",
+                "sourceNumbers": [
+                  1.82
+                ]
+              }
+            },
+            {
+              "key": "documented-2",
+              "label": {
+                "text": "Espesor relativo de la pared",
+                "locale": "es",
+                "template": "documented-authored-3e5398ad79385c5ec325"
+              },
+              "value": {
+                "text": "0,40",
+                "locale": "es",
+                "template": "documented-authored-612771c99b0b3a6c1c37",
+                "sourceNumbers": [
+                  0.4
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Geometría normal",
+            "locale": "es",
+            "template": "documented-authored-d50dc8ded4d9dbde6715"
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "SIV 1,4 · DDVE 4,6 · PP 1,3 cm (mulher): hipertrofia concêntrica",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Masa del VI",
+                "locale": "es",
+                "template": "documented-authored-2ea7e3063df472ab86fa"
+              },
+              "value": {
+                "text": "243 g",
+                "locale": "es",
+                "template": "documented-authored-96374f8bcf1421016c5d",
+                "sourceNumbers": [
+                  243
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "Superficie corporal",
+                "locale": "es",
+                "template": "documented-authored-560ad10e83bffd41e076"
+              },
+              "value": {
+                "text": "1,82 m²",
+                "locale": "es",
+                "template": "documented-authored-911a9ee0a1e2d41e442e",
+                "sourceNumbers": [
+                  1.82
+                ]
+              }
+            },
+            {
+              "key": "documented-2",
+              "label": {
+                "text": "Espesor relativo de la pared",
+                "locale": "es",
+                "template": "documented-authored-3e5398ad79385c5ec325"
+              },
+              "value": {
+                "text": "0,57",
+                "locale": "es",
+                "template": "documented-authored-612771c99b0b3a6c1c37",
+                "sourceNumbers": [
+                  0.57
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Hipertrofia concéntrica",
+            "locale": "es",
+            "template": "documented-authored-43a75bb58ef3d3822ea5"
+          },
+          "level": "high"
+        }
+      }
+    ],
+    "fr": [
+      {
+        "name": "SIV 1,0 · DDVE 5,0 · PP 1,0 cm; 70 kg, 170 cm (homem): 182 g, ERP 0,40, geometria normal",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Masse du VG",
+                "locale": "fr",
+                "template": "documented-authored-2ea7e3063df472ab86fa"
+              },
+              "value": {
+                "text": "182 g",
+                "locale": "fr",
+                "template": "documented-authored-96374f8bcf1421016c5d",
+                "sourceNumbers": [
+                  182
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "Surface corporelle",
+                "locale": "fr",
+                "template": "documented-authored-560ad10e83bffd41e076"
+              },
+              "value": {
+                "text": "1,82 m²",
+                "locale": "fr",
+                "template": "documented-authored-911a9ee0a1e2d41e442e",
+                "sourceNumbers": [
+                  1.82
+                ]
+              }
+            },
+            {
+              "key": "documented-2",
+              "label": {
+                "text": "Épaisseur relative de la paroi",
+                "locale": "fr",
+                "template": "documented-authored-3e5398ad79385c5ec325"
+              },
+              "value": {
+                "text": "0,40",
+                "locale": "fr",
+                "template": "documented-authored-612771c99b0b3a6c1c37",
+                "sourceNumbers": [
+                  0.4
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Géométrie normale",
+            "locale": "fr",
+            "template": "documented-authored-d50dc8ded4d9dbde6715"
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "SIV 1,4 · DDVE 4,6 · PP 1,3 cm (mulher): hipertrofia concêntrica",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Masse du VG",
+                "locale": "fr",
+                "template": "documented-authored-2ea7e3063df472ab86fa"
+              },
+              "value": {
+                "text": "243 g",
+                "locale": "fr",
+                "template": "documented-authored-96374f8bcf1421016c5d",
+                "sourceNumbers": [
+                  243
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "Surface corporelle",
+                "locale": "fr",
+                "template": "documented-authored-560ad10e83bffd41e076"
+              },
+              "value": {
+                "text": "1,82 m²",
+                "locale": "fr",
+                "template": "documented-authored-911a9ee0a1e2d41e442e",
+                "sourceNumbers": [
+                  1.82
+                ]
+              }
+            },
+            {
+              "key": "documented-2",
+              "label": {
+                "text": "Épaisseur relative de la paroi",
+                "locale": "fr",
+                "template": "documented-authored-3e5398ad79385c5ec325"
+              },
+              "value": {
+                "text": "0,57",
+                "locale": "fr",
+                "template": "documented-authored-612771c99b0b3a6c1c37",
+                "sourceNumbers": [
+                  0.57
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Hypertrophie concentrique",
+            "locale": "fr",
+            "template": "documented-authored-43a75bb58ef3d3822ea5"
+          },
+          "level": "high"
+        }
+      }
+    ],
+    "de": [
+      {
+        "name": "SIV 1,0 · DDVE 5,0 · PP 1,0 cm; 70 kg, 170 cm (homem): 182 g, ERP 0,40, geometria normal",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Linksventrikuläre Masse",
+                "locale": "de",
+                "template": "documented-authored-2ea7e3063df472ab86fa"
+              },
+              "value": {
+                "text": "182 g",
+                "locale": "de",
+                "template": "documented-authored-96374f8bcf1421016c5d",
+                "sourceNumbers": [
+                  182
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "Körperoberfläche",
+                "locale": "de",
+                "template": "documented-authored-560ad10e83bffd41e076"
+              },
+              "value": {
+                "text": "1,82 m²",
+                "locale": "de",
+                "template": "documented-authored-911a9ee0a1e2d41e442e",
+                "sourceNumbers": [
+                  1.82
+                ]
+              }
+            },
+            {
+              "key": "documented-2",
+              "label": {
+                "text": "Relative Wanddicke",
+                "locale": "de",
+                "template": "documented-authored-3e5398ad79385c5ec325"
+              },
+              "value": {
+                "text": "0,40",
+                "locale": "de",
+                "template": "documented-authored-612771c99b0b3a6c1c37",
+                "sourceNumbers": [
+                  0.4
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Normale Geometrie",
+            "locale": "de",
+            "template": "documented-authored-d50dc8ded4d9dbde6715"
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "SIV 1,4 · DDVE 4,6 · PP 1,3 cm (mulher): hipertrofia concêntrica",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Linksventrikuläre Masse",
+                "locale": "de",
+                "template": "documented-authored-2ea7e3063df472ab86fa"
+              },
+              "value": {
+                "text": "243 g",
+                "locale": "de",
+                "template": "documented-authored-96374f8bcf1421016c5d",
+                "sourceNumbers": [
+                  243
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "Körperoberfläche",
+                "locale": "de",
+                "template": "documented-authored-560ad10e83bffd41e076"
+              },
+              "value": {
+                "text": "1,82 m²",
+                "locale": "de",
+                "template": "documented-authored-911a9ee0a1e2d41e442e",
+                "sourceNumbers": [
+                  1.82
+                ]
+              }
+            },
+            {
+              "key": "documented-2",
+              "label": {
+                "text": "Relative Wanddicke",
+                "locale": "de",
+                "template": "documented-authored-3e5398ad79385c5ec325"
+              },
+              "value": {
+                "text": "0,57",
+                "locale": "de",
+                "template": "documented-authored-612771c99b0b3a6c1c37",
+                "sourceNumbers": [
+                  0.57
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Konzentrische Hypertrophie",
+            "locale": "de",
+            "template": "documented-authored-43a75bb58ef3d3822ea5"
+          },
+          "level": "high"
+        }
+      }
+    ],
+    "it": [
+      {
+        "name": "SIV 1,0 · DDVE 5,0 · PP 1,0 cm; 70 kg, 170 cm (homem): 182 g, ERP 0,40, geometria normal",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Massa del VS",
+                "locale": "it",
+                "template": "documented-authored-2ea7e3063df472ab86fa"
+              },
+              "value": {
+                "text": "182 g",
+                "locale": "it",
+                "template": "documented-authored-96374f8bcf1421016c5d",
+                "sourceNumbers": [
+                  182
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "Superficie corporea",
+                "locale": "it",
+                "template": "documented-authored-560ad10e83bffd41e076"
+              },
+              "value": {
+                "text": "1,82 m²",
+                "locale": "it",
+                "template": "documented-authored-911a9ee0a1e2d41e442e",
+                "sourceNumbers": [
+                  1.82
+                ]
+              }
+            },
+            {
+              "key": "documented-2",
+              "label": {
+                "text": "Spessore relativo della parete",
+                "locale": "it",
+                "template": "documented-authored-3e5398ad79385c5ec325"
+              },
+              "value": {
+                "text": "0,40",
+                "locale": "it",
+                "template": "documented-authored-612771c99b0b3a6c1c37",
+                "sourceNumbers": [
+                  0.4
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Geometria normale",
+            "locale": "it",
+            "template": "documented-authored-d50dc8ded4d9dbde6715"
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "SIV 1,4 · DDVE 4,6 · PP 1,3 cm (mulher): hipertrofia concêntrica",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Massa del VS",
+                "locale": "it",
+                "template": "documented-authored-2ea7e3063df472ab86fa"
+              },
+              "value": {
+                "text": "243 g",
+                "locale": "it",
+                "template": "documented-authored-96374f8bcf1421016c5d",
+                "sourceNumbers": [
+                  243
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "Superficie corporea",
+                "locale": "it",
+                "template": "documented-authored-560ad10e83bffd41e076"
+              },
+              "value": {
+                "text": "1,82 m²",
+                "locale": "it",
+                "template": "documented-authored-911a9ee0a1e2d41e442e",
+                "sourceNumbers": [
+                  1.82
+                ]
+              }
+            },
+            {
+              "key": "documented-2",
+              "label": {
+                "text": "Spessore relativo della parete",
+                "locale": "it",
+                "template": "documented-authored-3e5398ad79385c5ec325"
+              },
+              "value": {
+                "text": "0,57",
+                "locale": "it",
+                "template": "documented-authored-612771c99b0b3a6c1c37",
+                "sourceNumbers": [
+                  0.57
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Ipertrofia concentrica",
+            "locale": "it",
+            "template": "documented-authored-43a75bb58ef3d3822ea5"
+          },
+          "level": "high"
+        }
+      }
+    ],
+    "ar": [
+      {
+        "name": "SIV 1,0 · DDVE 5,0 · PP 1,0 cm; 70 kg, 170 cm (homem): 182 g, ERP 0,40, geometria normal",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "كتلة البطين الأيسر",
+                "locale": "ar",
+                "template": "documented-authored-2ea7e3063df472ab86fa"
+              },
+              "value": {
+                "text": "١٨٢ g",
+                "locale": "ar",
+                "template": "documented-authored-96374f8bcf1421016c5d",
+                "sourceNumbers": [
+                  182
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "مساحة سطح الجسم",
+                "locale": "ar",
+                "template": "documented-authored-560ad10e83bffd41e076"
+              },
+              "value": {
+                "text": "١٫٨٢ m²",
+                "locale": "ar",
+                "template": "documented-authored-911a9ee0a1e2d41e442e",
+                "sourceNumbers": [
+                  1.82
+                ]
+              }
+            },
+            {
+              "key": "documented-2",
+              "label": {
+                "text": "السماكة النسبية للجدار",
+                "locale": "ar",
+                "template": "documented-authored-3e5398ad79385c5ec325"
+              },
+              "value": {
+                "text": "٠٫٤٠",
+                "locale": "ar",
+                "template": "documented-authored-612771c99b0b3a6c1c37",
+                "sourceNumbers": [
+                  0.4
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "هندسة طبيعية",
+            "locale": "ar",
+            "template": "documented-authored-d50dc8ded4d9dbde6715"
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "SIV 1,4 · DDVE 4,6 · PP 1,3 cm (mulher): hipertrofia concêntrica",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "كتلة البطين الأيسر",
+                "locale": "ar",
+                "template": "documented-authored-2ea7e3063df472ab86fa"
+              },
+              "value": {
+                "text": "٢٤٣ g",
+                "locale": "ar",
+                "template": "documented-authored-96374f8bcf1421016c5d",
+                "sourceNumbers": [
+                  243
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "مساحة سطح الجسم",
+                "locale": "ar",
+                "template": "documented-authored-560ad10e83bffd41e076"
+              },
+              "value": {
+                "text": "١٫٨٢ m²",
+                "locale": "ar",
+                "template": "documented-authored-911a9ee0a1e2d41e442e",
+                "sourceNumbers": [
+                  1.82
+                ]
+              }
+            },
+            {
+              "key": "documented-2",
+              "label": {
+                "text": "السماكة النسبية للجدار",
+                "locale": "ar",
+                "template": "documented-authored-3e5398ad79385c5ec325"
+              },
+              "value": {
+                "text": "٠٫٥٧",
+                "locale": "ar",
+                "template": "documented-authored-612771c99b0b3a6c1c37",
+                "sourceNumbers": [
+                  0.57
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "تضخم مُتراكز",
+            "locale": "ar",
+            "template": "documented-authored-43a75bb58ef3d3822ea5"
+          },
+          "level": "high"
+        }
+      }
+    ],
+    "zh": [
+      {
+        "name": "SIV 1,0 · DDVE 5,0 · PP 1,0 cm; 70 kg, 170 cm (homem): 182 g, ERP 0,40, geometria normal",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "左心室质量",
+                "locale": "zh",
+                "template": "documented-authored-2ea7e3063df472ab86fa"
+              },
+              "value": {
+                "text": "182 g",
+                "locale": "zh",
+                "template": "documented-authored-96374f8bcf1421016c5d",
+                "sourceNumbers": [
+                  182
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "体表面积",
+                "locale": "zh",
+                "template": "documented-authored-560ad10e83bffd41e076"
+              },
+              "value": {
+                "text": "1.82 m²",
+                "locale": "zh",
+                "template": "documented-authored-911a9ee0a1e2d41e442e",
+                "sourceNumbers": [
+                  1.82
+                ]
+              }
+            },
+            {
+              "key": "documented-2",
+              "label": {
+                "text": "相对壁厚",
+                "locale": "zh",
+                "template": "documented-authored-3e5398ad79385c5ec325"
+              },
+              "value": {
+                "text": "0.40",
+                "locale": "zh",
+                "template": "documented-authored-612771c99b0b3a6c1c37",
+                "sourceNumbers": [
+                  0.4
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "正常几何形态",
+            "locale": "zh",
+            "template": "documented-authored-d50dc8ded4d9dbde6715"
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "SIV 1,4 · DDVE 4,6 · PP 1,3 cm (mulher): hipertrofia concêntrica",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "左心室质量",
+                "locale": "zh",
+                "template": "documented-authored-2ea7e3063df472ab86fa"
+              },
+              "value": {
+                "text": "243 g",
+                "locale": "zh",
+                "template": "documented-authored-96374f8bcf1421016c5d",
+                "sourceNumbers": [
+                  243
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "体表面积",
+                "locale": "zh",
+                "template": "documented-authored-560ad10e83bffd41e076"
+              },
+              "value": {
+                "text": "1.82 m²",
+                "locale": "zh",
+                "template": "documented-authored-911a9ee0a1e2d41e442e",
+                "sourceNumbers": [
+                  1.82
+                ]
+              }
+            },
+            {
+              "key": "documented-2",
+              "label": {
+                "text": "相对壁厚",
+                "locale": "zh",
+                "template": "documented-authored-3e5398ad79385c5ec325"
+              },
+              "value": {
+                "text": "0.57",
+                "locale": "zh",
+                "template": "documented-authored-612771c99b0b3a6c1c37",
+                "sourceNumbers": [
+                  0.57
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "向心性肥厚",
+            "locale": "zh",
+            "template": "documented-authored-43a75bb58ef3d3822ea5"
+          },
+          "level": "high"
+        }
+      }
+    ],
+    "ja": [
+      {
+        "name": "SIV 1,0 · DDVE 5,0 · PP 1,0 cm; 70 kg, 170 cm (homem): 182 g, ERP 0,40, geometria normal",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "左室質量",
+                "locale": "ja",
+                "template": "documented-authored-2ea7e3063df472ab86fa"
+              },
+              "value": {
+                "text": "182 g",
+                "locale": "ja",
+                "template": "documented-authored-96374f8bcf1421016c5d",
+                "sourceNumbers": [
+                  182
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "体表面積",
+                "locale": "ja",
+                "template": "documented-authored-560ad10e83bffd41e076"
+              },
+              "value": {
+                "text": "1.82 m²",
+                "locale": "ja",
+                "template": "documented-authored-911a9ee0a1e2d41e442e",
+                "sourceNumbers": [
+                  1.82
+                ]
+              }
+            },
+            {
+              "key": "documented-2",
+              "label": {
+                "text": "相対壁厚",
+                "locale": "ja",
+                "template": "documented-authored-3e5398ad79385c5ec325"
+              },
+              "value": {
+                "text": "0.40",
+                "locale": "ja",
+                "template": "documented-authored-612771c99b0b3a6c1c37",
+                "sourceNumbers": [
+                  0.4
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "正常形状",
+            "locale": "ja",
+            "template": "documented-authored-d50dc8ded4d9dbde6715"
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "SIV 1,4 · DDVE 4,6 · PP 1,3 cm (mulher): hipertrofia concêntrica",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "左室質量",
+                "locale": "ja",
+                "template": "documented-authored-2ea7e3063df472ab86fa"
+              },
+              "value": {
+                "text": "243 g",
+                "locale": "ja",
+                "template": "documented-authored-96374f8bcf1421016c5d",
+                "sourceNumbers": [
+                  243
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "体表面積",
+                "locale": "ja",
+                "template": "documented-authored-560ad10e83bffd41e076"
+              },
+              "value": {
+                "text": "1.82 m²",
+                "locale": "ja",
+                "template": "documented-authored-911a9ee0a1e2d41e442e",
+                "sourceNumbers": [
+                  1.82
+                ]
+              }
+            },
+            {
+              "key": "documented-2",
+              "label": {
+                "text": "相対壁厚",
+                "locale": "ja",
+                "template": "documented-authored-3e5398ad79385c5ec325"
+              },
+              "value": {
+                "text": "0.57",
+                "locale": "ja",
+                "template": "documented-authored-612771c99b0b3a6c1c37",
+                "sourceNumbers": [
+                  0.57
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "求心性肥大",
+            "locale": "ja",
+            "template": "documented-authored-43a75bb58ef3d3822ea5"
+          },
+          "level": "high"
+        }
+      }
+    ],
+    "hi": [
+      {
+        "name": "SIV 1,0 · DDVE 5,0 · PP 1,0 cm; 70 kg, 170 cm (homem): 182 g, ERP 0,40, geometria normal",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "बाएँ निलय का द्रव्यमान",
+                "locale": "hi",
+                "template": "documented-authored-2ea7e3063df472ab86fa"
+              },
+              "value": {
+                "text": "182 g",
+                "locale": "hi",
+                "template": "documented-authored-96374f8bcf1421016c5d",
+                "sourceNumbers": [
+                  182
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "शरीर की सतह क्षेत्रफल",
+                "locale": "hi",
+                "template": "documented-authored-560ad10e83bffd41e076"
+              },
+              "value": {
+                "text": "1.82 m²",
+                "locale": "hi",
+                "template": "documented-authored-911a9ee0a1e2d41e442e",
+                "sourceNumbers": [
+                  1.82
+                ]
+              }
+            },
+            {
+              "key": "documented-2",
+              "label": {
+                "text": "सापेक्ष दीवार मोटाई",
+                "locale": "hi",
+                "template": "documented-authored-3e5398ad79385c5ec325"
+              },
+              "value": {
+                "text": "0.40",
+                "locale": "hi",
+                "template": "documented-authored-612771c99b0b3a6c1c37",
+                "sourceNumbers": [
+                  0.4
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "सामान्य ज्यामिति",
+            "locale": "hi",
+            "template": "documented-authored-d50dc8ded4d9dbde6715"
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "SIV 1,4 · DDVE 4,6 · PP 1,3 cm (mulher): hipertrofia concêntrica",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "बाएँ निलय का द्रव्यमान",
+                "locale": "hi",
+                "template": "documented-authored-2ea7e3063df472ab86fa"
+              },
+              "value": {
+                "text": "243 g",
+                "locale": "hi",
+                "template": "documented-authored-96374f8bcf1421016c5d",
+                "sourceNumbers": [
+                  243
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "शरीर की सतह क्षेत्रफल",
+                "locale": "hi",
+                "template": "documented-authored-560ad10e83bffd41e076"
+              },
+              "value": {
+                "text": "1.82 m²",
+                "locale": "hi",
+                "template": "documented-authored-911a9ee0a1e2d41e442e",
+                "sourceNumbers": [
+                  1.82
+                ]
+              }
+            },
+            {
+              "key": "documented-2",
+              "label": {
+                "text": "सापेक्ष दीवार मोटाई",
+                "locale": "hi",
+                "template": "documented-authored-3e5398ad79385c5ec325"
+              },
+              "value": {
+                "text": "0.57",
+                "locale": "hi",
+                "template": "documented-authored-612771c99b0b3a6c1c37",
+                "sourceNumbers": [
+                  0.57
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "समकेन्द्रीय अतिवृद्धि",
+            "locale": "hi",
+            "template": "documented-authored-43a75bb58ef3d3822ea5"
+          },
+          "level": "high"
+        }
+      }
+    ]
+  }
+}

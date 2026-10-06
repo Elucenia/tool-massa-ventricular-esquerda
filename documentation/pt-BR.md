@@ -94,3 +94,29 @@ Resultado da fórmula ou classificação. Interpretação, conduta e aplicabilid
 Apache-2.0 aplica-se somente ao código da ELUCENIA. Os instrumentos, publicações, traduções e dados mantêm os direitos dos respectivos titulares. Preserve LICENSE e NOTICE.
 
 ELUCENIA · Felipe Guedes · Copyright © 2026
+
+## Resultados documentados
+
+As informações abaixo preservam as saídas do método para exemplos sintéticos. Não constituem validação clínica independente.
+
+### 1
+
+Geometria normal
+
+| Detalhes do resultado | |
+| --- | --- |
+| Massa do VE | 182 g |
+| Superfície corporal | 1,82 m² |
+| Espessura relativa da parede | 0,40 |
+
+
+### 2
+
+Hipertrofia concêntrica
+
+| Detalhes do resultado | |
+| --- | --- |
+| Massa do VE | 243 g |
+| Superfície corporal | 1,82 m² |
+| Espessura relativa da parede | 0,57 |
+

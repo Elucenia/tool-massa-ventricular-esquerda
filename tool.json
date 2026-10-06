@@ -161,7 +161,7 @@
       "publicCandidateBankOmitted": true
     },
     "methodVersion": "Devereux 1986 equação cúbica corrigida 0,8×1,04+0,6; ASEEACVI 2015; indexação SCMosteller",
-    "implementationVersion": "massa-ventricular-esquerda@native-2026-10-03+44d70bcc90d3",
+    "implementationVersion": "massa-ventricular-esquerda@native-2026-10-05+d7e80f227297",
     "currentMethodSource": "https://pubmed.ncbi.nlm.nih.gov/25559473/",
     "versionEvidence": {
       "status": "variant-and-source-edition-recorded",
@@ -293,7 +293,35 @@
       "clinicalApproval": "not-performed",
       "translationApproval": "not-performed",
       "releaseApproval": "not-performed",
-      "implementationHash": "44d70bcc90d37c70197111c448b2c362c3e5554d57cedd08b3bd3bf3cad84425"
+      "implementationHash": "d7e80f22729738d107b7a876d84e06e0c866e6874f82d924b035fcd6893e793c",
+      "documentedOutputContract": {
+        "fields": [
+          "level",
+          "verdict",
+          "rows",
+          "note"
+        ],
+        "scope": "Optional documented outputs already produced by the existing scientific method; no new classification or treatment decision.",
+        "sourceExposureReceipt": {
+          "file": "reports/review-20261005-completion/native-result-presentation-r1/applied-output-r1/receipt.json",
+          "sha256": "ad5471530e501b906b966463cef1eb20e9745ac745fc30fb85d3ec4db2a333c3"
+        },
+        "scientificBodiesUnchanged": true,
+        "clinicalApproval": "not-performed",
+        "professionalLanguageApproval": "not-performed"
+      },
+      "technicalBindingHistory": [
+        {
+          "recordedAt": "2026-10-05T23:55:42.176Z",
+          "scope": "Expose existing documented result fields; scientific body and complete input contract unchanged.",
+          "previousImplementationVersion": "massa-ventricular-esquerda@native-2026-10-03+44d70bcc90d3",
+          "previousImplementationHash": "44d70bcc90d37c70197111c448b2c362c3e5554d57cedd08b3bd3bf3cad84425",
+          "implementationHash": "d7e80f22729738d107b7a876d84e06e0c866e6874f82d924b035fcd6893e793c",
+          "scientificBodySha256": "b4d55083279a845d0b7233d9e2139bca668598d839dfa63fcf23d6c0243b6e0f",
+          "metadataContractHash": "f32b2858a77072ba649370ab60afa8755bba3c467a3ca487c2b48d95922eb47e",
+          "exposureReceiptSha256": "ad5471530e501b906b966463cef1eb20e9745ac745fc30fb85d3ec4db2a333c3"
+        }
+      ]
     },
     "limits": "O método linear ASE/EACVI 2015 requer dimensões em centímetros obtidas ao final da diástole e perpendiculares ao eixo longo do ventrículo. Depende de geometria adequada; hipertrofia assimétrica, dilatação e variação regional da espessura podem torná-lo inexato. Como as medidas são elevadas ao cubo, pequenos erros de aquisição alteram a massa. Referências de métodos linear, 2D e indexações corporais diferentes não devem ser intercambiadas automaticamente.",
     "sourceLimitEvidence": {
@@ -312,15 +340,15 @@
   },
   "currentSource": {
     "file": "apps/website/private/tool-code/massa-ventricular-esquerda/calculator.js",
-    "bytes": 5452,
-    "sha256": "44d70bcc90d37c70197111c448b2c362c3e5554d57cedd08b3bd3bf3cad84425"
+    "bytes": 5657,
+    "sha256": "d7e80f22729738d107b7a876d84e06e0c866e6874f82d924b035fcd6893e793c"
   },
-  "sourceToolSha256": "1bbd8d029b79f6f05d9195d13c459887866f65e752bc0e2149ea591b80b992e6",
+  "sourceToolSha256": "7d0ed825fe6d3165e773897f6b2415ce74c25aff131040ee16d806e20944af2f",
   "omittedFullReferenceBanks": [
     {
       "rows": 30,
       "sha256": "2d1d514d08b24beefa0c1da4cadc7086abdaccf2f176b21febce18f17e547c85",
-      "reason": "Large independent reference bank not bundled; exact evidence scope and file references retained"
+      "reason": "Large independent reference bank not bundled; historical proof scope retained"
     }
   ],
   "clinicalApproval": "not-performed",

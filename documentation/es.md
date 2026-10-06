@@ -94,3 +94,29 @@ Resultado de la fórmula o clasificación. La interpretación, la conducta y la 
 Apache-2.0 se aplica únicamente al código de ELUCENIA. Los derechos de los instrumentos, publicaciones, traducciones y datos permanecen en manos de sus respectivos titulares. Conserve LICENSE y NOTICE.
 
 ELUCENIA · Felipe Guedes · Copyright © 2026
+
+## Resultados documentados
+
+La información siguiente conserva las salidas del método para ejemplos sintéticos. No constituye una validación clínica independiente.
+
+### 1
+
+Geometría normal
+
+| Detalles del resultado | |
+| --- | --- |
+| Masa del VI | 182 g |
+| Superficie corporal | 1,82 m² |
+| Espesor relativo de la pared | 0,40 |
+
+
+### 2
+
+Hipertrofia concéntrica
+
+| Detalles del resultado | |
+| --- | --- |
+| Masa del VI | 243 g |
+| Superficie corporal | 1,82 m² |
+| Espesor relativo de la pared | 0,57 |
+

@@ -1,0 +1,166 @@
+{
+  "schema": "elucenia-public-source-result-preservation-v1",
+  "id": "massa-ventricular-esquerda",
+  "source": {
+    "baselineFile": "reports/review-20261005-completion/public-native-output-baseline-r2/baseline.json",
+    "baselineSha256": "e5f274fa5acc74566e1c3d55afb6bb402ad9928337dd77a2945442f5b6c49439",
+    "previousCommit": "bd0babd1fa4c29103cc9c5784087b2bc407e0151",
+    "oldEngineSha256": "44d70bcc90d37c70197111c448b2c362c3e5554d57cedd08b3bd3bf3cad84425",
+    "currentEngineSha256": "d7e80f22729738d107b7a876d84e06e0c866e6874f82d924b035fcd6893e793c"
+  },
+  "scope": "Existing synthetic inputs and same pinned mathematical-function outputs. Clinical interpretation correctness and professional translation are separate unperformed reviews.",
+  "clinicalApproval": "not-performed",
+  "professionalLanguageReview": "not-performed",
+  "cases": [
+    {
+      "caseIndex": 0,
+      "name": "SIV 1,0 · DDVE 5,0 · PP 1,0 cm; 70 kg, 170 cm (homem): 182 g, ERP 0,40, geometria normal",
+      "input": {
+        "siv": 1,
+        "ddve": 5,
+        "ppve": 1,
+        "peso": 70,
+        "altura": 170,
+        "sexo": "M"
+      },
+      "publicOutput": {
+        "id": "massa-ventricular-esquerda",
+        "main": [
+          "100",
+          "g/m²"
+        ],
+        "label": "Índice de massa do VE",
+        "raw": {
+          "mass": 181.976,
+          "index": 100.09027541712346,
+          "rwt": 0.4,
+          "bsa": 1.818118685772619
+        },
+        "clinicalValidation": "not-performed"
+      },
+      "sourceExpected": {
+        "raw": {
+          "mass": 182,
+          "rwt": 0.4
+        },
+        "tol": 0.05,
+        "verdict": "Geometria normal"
+      },
+      "inspectedSourceOutput": {
+        "main": [
+          "100",
+          "g/m²"
+        ],
+        "label": "Índice de massa do VE",
+        "level": "low",
+        "verdict": "Geometria normal",
+        "rows": [
+          [
+            "Massa do VE",
+            "182 g"
+          ],
+          [
+            "Superfície corporal",
+            "1,82 m²"
+          ],
+          [
+            "Espessura relativa da parede",
+            "0,40"
+          ]
+        ],
+        "raw": {
+          "mass": 181.976,
+          "index": 100.09027541712346,
+          "rwt": 0.4,
+          "bsa": 1.818118685772619
+        }
+      },
+      "numericEquality": true,
+      "inspectionScope": "Same pinned source function, inspected in memory; not an independent formula/clinical oracle.",
+      "state": "source-transport-comparable",
+      "nonemptySourceFields": [
+        "verdict",
+        "level",
+        "rows"
+      ],
+      "missingPublicFields": [
+        "verdict",
+        "level",
+        "rows"
+      ]
+    },
+    {
+      "caseIndex": 1,
+      "name": "SIV 1,4 · DDVE 4,6 · PP 1,3 cm (mulher): hipertrofia concêntrica",
+      "input": {
+        "siv": 1.4,
+        "ddve": 4.6,
+        "ppve": 1.3,
+        "peso": 70,
+        "altura": 170,
+        "sexo": "F"
+      },
+      "publicOutput": {
+        "id": "massa-ventricular-esquerda",
+        "main": [
+          "134",
+          "g/m²"
+        ],
+        "label": "Índice de massa do VE",
+        "raw": {
+          "mass": 243.27859199999995,
+          "index": 133.80787178732362,
+          "rwt": 0.5652173913043479,
+          "bsa": 1.818118685772619
+        },
+        "clinicalValidation": "not-performed"
+      },
+      "sourceExpected": {
+        "verdict": "Hipertrofia concêntrica",
+        "level": "high"
+      },
+      "inspectedSourceOutput": {
+        "main": [
+          "134",
+          "g/m²"
+        ],
+        "label": "Índice de massa do VE",
+        "level": "high",
+        "verdict": "Hipertrofia concêntrica",
+        "rows": [
+          [
+            "Massa do VE",
+            "243 g"
+          ],
+          [
+            "Superfície corporal",
+            "1,82 m²"
+          ],
+          [
+            "Espessura relativa da parede",
+            "0,57"
+          ]
+        ],
+        "raw": {
+          "mass": 243.27859199999995,
+          "index": 133.80787178732362,
+          "rwt": 0.5652173913043479,
+          "bsa": 1.818118685772619
+        }
+      },
+      "numericEquality": true,
+      "inspectionScope": "Same pinned source function, inspected in memory; not an independent formula/clinical oracle.",
+      "state": "source-transport-comparable",
+      "nonemptySourceFields": [
+        "verdict",
+        "level",
+        "rows"
+      ],
+      "missingPublicFields": [
+        "verdict",
+        "level",
+        "rows"
+      ]
+    }
+  ]
+}

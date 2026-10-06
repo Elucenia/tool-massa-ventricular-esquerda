@@ -1,6 +1,6 @@
 {
   "id": "massa-ventricular-esquerda",
-  "scope": "Exclusive report-owned R6-HTTP-linked candidate, read-only default test",
+  "scope": "Immutable package integrity; tests write no files",
   "files": [
     {
       "path": ".gitattributes",
@@ -24,8 +24,8 @@
     },
     {
       "path": "calculator.browser.js",
-      "bytes": 5452,
-      "sha256": "44d70bcc90d37c70197111c448b2c362c3e5554d57cedd08b3bd3bf3cad84425"
+      "bytes": 5657,
+      "sha256": "d7e80f22729738d107b7a876d84e06e0c866e6874f82d924b035fcd6893e793c"
     },
     {
       "path": "calculator.js",
@@ -39,8 +39,8 @@
     },
     {
       "path": "CODE-COMPONENTS.md",
-      "bytes": 1117,
-      "sha256": "f062d18327967be7aa7759e9ffe4302c82314a1d007b9ce6dac32ef875157ba8"
+      "bytes": 1386,
+      "sha256": "be042824040ab189e25692a4a4ac78dbb0b212a96d90c2789ce923e1f277c74f"
     },
     {
       "path": "CONTRIBUTING.md",
@@ -49,68 +49,78 @@
     },
     {
       "path": "demo-runtime.js",
-      "bytes": 11656,
-      "sha256": "734da1ceff19b961423e1bb5d2c9eaafd18920b32cc4f331856f6065c9cfd2c9"
+      "bytes": 14286,
+      "sha256": "187cb0a3f2693707660f7fc69fc63ce5e30055a5ccdc621cc7945a0d3b1d2918"
     },
     {
       "path": "documentation/ar.md",
-      "bytes": 4751,
-      "sha256": "f84ec544faecbc5c8771fb891531bca80ce7bf2e99163c9b967f8cfd9e2e706a"
+      "bytes": 5436,
+      "sha256": "92bf0251eeac2ab6216a36f008a2573a2e33f5bbaf2aad0eceab30be6fe72b6b"
     },
     {
       "path": "documentation/de.md",
-      "bytes": 3841,
-      "sha256": "d9fe3a7842d5a0e011d191624eb2c1a5c1707b93befc209fe4eb4b3b657c8ea4"
+      "bytes": 4353,
+      "sha256": "ae862dd85e8ae4ef91f1ee3ca8c56a82d9ff1f2c72f99b30cd0ed021921c1eef"
     },
     {
       "path": "documentation/en.md",
-      "bytes": 3379,
-      "sha256": "4098888f5bee8fdd66c811292c55d3b9cac5d978b5b332de9d04e34c75c64cc4"
+      "bytes": 3867,
+      "sha256": "0de00081ca0d5384c0be9b77efc00340bd7443d3e9ff1c6a3184f5815e07e689"
     },
     {
       "path": "documentation/es.md",
-      "bytes": 3768,
-      "sha256": "3b86a71827db7773aca54b4726f309b144181cd766cf72ce5c4297e3807152c7"
+      "bytes": 4284,
+      "sha256": "94665501088318876ad86525fa0c96c743f458f2bb51247b77e8de7dfbb70428"
     },
     {
       "path": "documentation/fr.md",
-      "bytes": 3942,
-      "sha256": "3c6ac69fa4238e62fbd95a256626282acfebcfebaeb2559e082ba4abfce9c293"
+      "bytes": 4485,
+      "sha256": "90b45284d62c90ba0a06af2105d8a6bd892dc184ca4bfdfa8dfc4e937394a356"
     },
     {
       "path": "documentation/hi.md",
-      "bytes": 6509,
-      "sha256": "318fa3603507bb3cefa516ca561dc966696175941eb9358450ac77a4eb21353f"
+      "bytes": 7550,
+      "sha256": "81f1c3a3a858da03ebe1788d1272534b72e6440210d67ce4787ed836a215833c"
     },
     {
       "path": "documentation/it.md",
-      "bytes": 3720,
-      "sha256": "cf3b6666c93340f2b4b236d942945a269962d78e4bd4d55b1ab0ed2dde4178c9"
+      "bytes": 4234,
+      "sha256": "47896c9a74770641aaf1639193c254218de001b2c4eb6a978092b9445f8ed87f"
     },
     {
       "path": "documentation/ja.md",
-      "bytes": 3675,
-      "sha256": "d408e32cc685fef14348b71506f31049744012fb497cecc91e78a3ab4e957d75"
+      "bytes": 4131,
+      "sha256": "1a80484ec6b4dee4345477361257ca8e6c7c9f961766d0a6574772c331c17122"
     },
     {
       "path": "documentation/pt-BR.md",
-      "bytes": 3351,
-      "sha256": "e798f39061ad5a4f8da6dc06f0fe96dee99e5820b67e64f24499ba6df1235393"
+      "bytes": 3860,
+      "sha256": "c4c4892cc35d32906bc35c0e136d8a47ebcf8324819a5526d7f43d0e10c3c67b"
     },
     {
       "path": "documentation/zh.md",
-      "bytes": 3028,
-      "sha256": "7e9858f3a62eb05f7238888ab5d1ef6d1190450680d5d4daaddddae892e51b76"
+      "bytes": 3421,
+      "sha256": "a352604978cf9476b761ebb54b8979ffd5e0cf8afa8fefe136a834ab42f9a0d8"
+    },
+    {
+      "path": "documented-result-examples.json",
+      "bytes": 38352,
+      "sha256": "1f35e05ed8ed2719691b3054b3a36492b6d24c3afc055afd1a040af245af2460"
     },
     {
       "path": "engine/tool-code/massa-ventricular-esquerda/calculator.js",
-      "bytes": 5452,
-      "sha256": "44d70bcc90d37c70197111c448b2c362c3e5554d57cedd08b3bd3bf3cad84425"
+      "bytes": 5657,
+      "sha256": "d7e80f22729738d107b7a876d84e06e0c866e6874f82d924b035fcd6893e793c"
     },
     {
       "path": "evidence/publication-base-reference.json",
       "bytes": 2829,
       "sha256": "57000a95f6e5816d77e819fe30a516495e286f02e8242659ea6721e3606b9f29"
+    },
+    {
+      "path": "evidence/publication-provenance-before-output-contract.json",
+      "bytes": 12045,
+      "sha256": "2819e4108c759f29e64c08348eb49a20597fd10dc3ad259e447c4dbf62027f71"
     },
     {
       "path": "evidence/served-http-r6.json",
@@ -134,8 +144,8 @@
     },
     {
       "path": "localization.js",
-      "bytes": 49294,
-      "sha256": "471ad82058a951f6b11248799fac5abb8b1887545a15d74c48be93d7191b7596"
+      "bytes": 63620,
+      "sha256": "28b6392493d5a7bedfe69de18fe977afc0c62f3785e3da3e3453db8900d70ac3"
     },
     {
       "path": "METHOD-CODE-LICENSE.txt",
@@ -154,23 +164,23 @@
     },
     {
       "path": "package.json",
-      "bytes": 395,
-      "sha256": "339e247075fbc517fe51a99f6656a42f80f8f6cfcb41dcf6e16275400355d34a"
+      "bytes": 489,
+      "sha256": "4b97655550adc5ded71de757ba1b8835d5c6872f3f6a13272a5b863322c6ca35"
     },
     {
       "path": "portal-formatters.browser.js",
-      "bytes": 31300,
-      "sha256": "d8522ffe0b858012dfd25e5e8d10fe2eefec977f2bdb612be5cbadf5c4bed9f3"
+      "bytes": 38687,
+      "sha256": "cf0668f6fd44a80a3e4064915cf2da02d2203a9596bd39a9a0a6025fb12e17f4"
     },
     {
       "path": "publication-provenance.json",
-      "bytes": 12045,
-      "sha256": "2819e4108c759f29e64c08348eb49a20597fd10dc3ad259e447c4dbf62027f71"
+      "bytes": 6415,
+      "sha256": "e3654cfcc71b3a2c926c7daeb5505bf9b2969de85c0bdf78086ebe8db7272c0a"
     },
     {
       "path": "README.md",
-      "bytes": 3232,
-      "sha256": "f44558c12cf701fd3c9faea80835f4cae4841509ef8c77863668dbb30ace0056"
+      "bytes": 3824,
+      "sha256": "2e4114e9efd5a502bef6866c1d706e00225ad385f9455a7df209dd3272c3a352"
     },
     {
       "path": "rejections.json",
@@ -188,9 +198,24 @@
       "sha256": "3c20d46e436116be0c673f0260b24bbc2193fafbd15fb4659bf0e545b452487e"
     },
     {
+      "path": "source-result-contract.json",
+      "bytes": 4542,
+      "sha256": "9d03e7388cc2dcf118974c1bfd8b051a344c10860bee0fb19f72d6471e4d6cf9"
+    },
+    {
       "path": "SOURCE-RIGHTS-REVIEW.md",
       "bytes": 1737,
       "sha256": "23c1c03187df35eaa13bc185b9874c8c4d55e1957df1b503bfbe0910147fe894"
+    },
+    {
+      "path": "test-presentation-contract.cjs",
+      "bytes": 1923,
+      "sha256": "a4a1734ea3d00c17ffeed7abbd605663459b7c190b695d2396cc58da93215cec"
+    },
+    {
+      "path": "test-source-result-contract.cjs",
+      "bytes": 1416,
+      "sha256": "cbadaf0576ecc2884c7523902880d2068e3a9b6b63df418359ab42219af2e386"
     },
     {
       "path": "test.cjs",
@@ -199,8 +224,8 @@
     },
     {
       "path": "tool.json",
-      "bytes": 13358,
-      "sha256": "c3db56729ce0ee76cdb2602a4168e46918680fca565c9cb946693c5aa85bd2df"
+      "bytes": 14883,
+      "sha256": "bd6917091f5f572b88280ec9bde0965a0b4d12af42ce2ad4ed173c93f55a28f3"
     }
   ]
 }
